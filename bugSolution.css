@@ -1,0 +1,25 @@
+The solution involves increasing the specificity of the `div p` selector. This can be achieved by using a more specific selector or adding an important declaration. Here's the corrected CSS code:
+
+```css
+div {
+  color: blue;
+}
+
+p {
+  color: red;
+}
+
+div p {
+  color: green !important; /* !important increases specificity to override */
+}
+```
+
+Alternatively, you can increase specificity by adding another parent element:
+
+```css
+.container div p {
+  color: green;
+}
+```
+
+Now, the `div p` rule will correctly override the `div` rule and apply the green color to the paragraph elements inside the `div`.
